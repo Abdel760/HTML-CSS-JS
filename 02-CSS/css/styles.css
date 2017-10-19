@@ -1,0 +1,145 @@
+/*---------------------------------------------------------------------------------------------------------------------------------------|
+|Dans cette feuille de style CSS, je vais pouvoir définir l'apparence que je veux donner aux différents éléments que composent ma page ! |
+|                                                                                                                                        |
+|  ### La Syntaxe ###                                                                                                                    |
+|  element {                                                                                                                             |
+|        propriete:valeur;                                                                                                               |
+|  }                                                                                                                                     |
+|---------------------------------------------------------------------------------------------------------------------------------------*/
+
+/* Ajout de Google Font */
+@import url('https://fonts.googleapis.com/css?family=Anton');
+
+/* -- Je cible dans ma page HTML, tous les élements A,
+      tous les élements H1 et tous les éléments H3 --  */
+a, h1, h3 {
+    font-family: 'Anton', sans-serif;
+}
+
+/*---------------------------------------------------------------------------------------------------------------------------------------|
+|   Cibler via la "classe" de l'élement                                                                                                  |
+|   NB : Une même classe peut-être présente plusieurs fois sur une même page                                                             |
+|  ### La Syntaxe ###                                                                                                                    |
+|   .LaClasse {                                                                                                                          |
+|        propriete:valeur;                                                                                                               |
+|   }                                                                                                                                    |
+|---------------------------------------------------------------------------------------------------------------------------------------*/
+
+/* 
+    CONSIGNE :
+        1. Tous les liens de la classe "header" en noir
+        2. Non souligné
+        3. Affiché en ligne via la propriété : "display"
+*/
+
+/*---
+    Ici, je cible tous les liens présent dans la div class "header"
+    ---*/
+
+.header a {
+    /* Plusieurs façon de définir une couleur*\
+
+
+    /* Mot clé de la couleur */
+    color: black;
+
+    /*Notation héxadécimal*/
+    color: #000000;
+    color: #000;
+
+    /* Notation décimal*/
+    color: rgb(000, 000, 000);
+    /* -- Gérer le soulignement de mon texte --*/
+    text-decoration: none;
+
+    /* -- Modifier la taille de la police --*/
+    font-size: 22px;
+
+    /* -- Les liens en MAJUSCULE --*/
+    text-transform: uppercase;
+}
+
+/* --
+    Ici, je cible toutes les listes présentes dans la div class "header
+--*/
+
+.header ul {
+    margin: 0;
+    padding: 0;
+}
+
+.header ul li {
+    display: inline-block;
+    /* -  WIDTH me permet définir la largeur de l'élément -*/
+    width: 317px;
+    
+    /* - Aligner mon texte dans son élément -*/
+    text-align: center;
+}
+
+/* --
+    Je souhaite que mes liens soient en rouge au passage de la souris 
+-- */
+
+a:hover {
+    color: purple;
+}
+
+/* --
+    Je change la couleur de mon lien à l'intérieur de la classe "current"
+-- */
+
+.current a {
+    color: purple;
+}
+
+/*---------------------------------------------------------------------------------------------------------------------------------------|
+|   Cibler via la "ID" un l'élement                                                                                                      |
+|   NB : Un ID ne peut-être présent qu'une seule fois sur une même page                                                                  |
+|  ### La Syntaxe ###                                                                                                                    |
+|   #MonID {                                                                                                                             |
+|        propriete:valeur;                                                                                                               |
+|   }                                                                                                                                    |
+|---------------------------------------------------------------------------------------------------------------------------------------*/
+
+#page {
+    /* -- Je vais définir la largeur de la page -- */
+    width: 960px;
+
+    /* -- margin: <top/bottom> <left/right> -- */
+    margin: 80px auto;
+
+    /* -- Je rajoute à ma page un fond blanc -- */
+    background: white;
+
+    border-radius: 5px;
+
+    box-shadow: 0px 0px 20px black;
+}
+
+/* -- Je souhaite changer la couleur du fond de ma page -- */
+
+body {
+    background-color: rgba(209, 208, 208, 0.753);
+}
+
+/* --------------
+CONSIGNE : 
+
+    1. A ma div#page, ajouter une marge top/bottom de 80px
+    2. Ajouter avec la propriété border-radius un arrondi de 5px a div#page
+    3. Puis, grâçe a box-shadow, ajouter une ombre légère autour de div#page
+-----------------*/
+
+#page {
+    /* -- margin : <top> <right> <bottom> <left> -- */
+    margin: 80px auto 80px auto;
+
+    /* -- border-radius permet de rajouter un arrondi à mon élément --*/
+    border-radius: 5px;
+
+    /*-- J'applique une ombre autour de ma #page -- */
+    /* -- offset-x | offset-y | blur-radius | color --*/
+    box-shadow: 0px 0px 15px #CCC;
+
+}
