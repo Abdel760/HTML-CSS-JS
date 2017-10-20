@@ -8,14 +8,24 @@
 |---------------------------------------------------------------------------------------------------------------------------------------*/
 
 /* Ajout de Google Font */
-@import url('https://fonts.googleapis.com/css?family=Anton');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab');
+@import url('https://fonts.googleapis.com/css?family=Russo+One');
+@import url('https://fonts.googleapis.com/css?family=Prociono');
+
 
 /* -- Je cible dans ma page HTML, tous les élements A,
       tous les élements H1 et tous les éléments H3 --  */
-a, h1, h3 {
-    font-family: 'Anton', sans-serif;
+h3 {
+    font-family: 'Roboto Slab', serif;
 }
 
+h1 {
+    font-family: 'Russo One', sans-serif;
+}
+
+div, a {
+    font-family: 'Prociono', serif;
+}
 /*---------------------------------------------------------------------------------------------------------------------------------------|
 |   Cibler via la "classe" de l'élement                                                                                                  |
 |   NB : Une même classe peut-être présente plusieurs fois sur une même page                                                             |
@@ -121,6 +131,8 @@ a:hover {
 
 body {
     background-color: rgba(209, 208, 208, 0.753);
+    background-image: url("../img/background-twitch.png");
+    background-size: cover;
 }
 
 /* --------------
@@ -144,6 +156,8 @@ CONSIGNE :
 
     /* -- J'applique une marge interne de 5px autour de #page -- */
     padding: 5px;
+
+    overflow: hidden;
 }
 
 .contenu h1 {
@@ -154,13 +168,130 @@ CONSIGNE :
     font-weight: normal;
 
     /* -- Solid : ligne par défaut, dotted : petit-point, dashed : traits d'union -- */
-    border-bottom: 1px dashed #000;
+    border-bottom: 5px solid rgb(118, 4, 141);
+   
 }
 
 .BandeauDuHaut {
     width: 100%;
     height: 360px;
-    background: url(../img/campus.jpg) no-repeat;
+    background: url(../img/banniere-twitch1.jpg) no-repeat;
     background-size: cover;
-    background-position-y: 10px;
+    background-position-y: -27px;
 }
+
+/* --
+    CSS pour Illustration et Article 
+    -- */
+
+    .contenu {
+        /* -- Dimension & Positionnement -- */
+        width: 100%;
+        height: auto;
+        float: left;
+        /* -- Décoration -- */
+    }
+
+    .illustration {
+         /* -- Dimension & Positionnement -- */
+         width: 480px;
+         height: auto;
+         float: left;
+         /* -- Décoration -- */
+    }
+
+    .illustration img {
+         /* -- Dimension & Positionnement -- */
+         max-width: 100%;
+         height: auto;
+         float: left;
+         /* -- Décoration -- */
+    }
+
+    .article {
+         /* -- Dimension & Positionnement -- */
+         width: 460px;
+         height: auto;
+         float: left;
+         /* -- Décoration -- */
+         margin: 0 10px 0 10px;
+         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+         text-align: justify;
+    }
+
+/* --
+    Style de mon pied de page
+    -- */
+
+    .footer{
+        /* -- Dimension & Positionnement -- */
+       width: 100%;
+      
+       /* -- Hauteur de la page -- */
+       height: 210px;
+       
+       /* -- Positionnement -- */
+        float: left;
+
+        /* -- Décoration -- */
+    }
+
+/* -- 
+    Ici, je souahite que mes 3 blocks soient positionnés les un à coté des autres ...
+    Mon pied de page étant égales à 960px, je divise mon nombre de blocks
+/* --
+    GOOGLE MAPS 
+    -- */
+
+    .gmap {
+       /* -- Dimension & Positionnement -- */
+       width: calc((100% / 3) - 10px);
+       float: left;
+       /* -- Décoration -- */ 
+       margin-left: 10px;
+    }
+/* --
+    NEWSLETTER 
+    -- */
+
+    .newsletter {
+        /* -- Dimension & Positionnement -- */
+        width: calc((100% / 3) - 10px);
+        float: left;
+        /* -- Décoration -- */
+        margin-left: 10px;
+    }
+
+    .newsletter form {}
+    
+    .newsletter fieldset {
+    
+    }
+    
+    .newsletter input {
+            width: 91%;
+            height: 25px;
+            margin-bottom: 5px;
+            padding: 5px 10px;
+    }
+
+    .newsletter input [type=submit] {
+        width: 100%;
+        height: 35px;
+        border: 0;
+        background: white;
+        font-size: 14px;
+        font-weight: bold;
+    }
+
+/* --
+    CONTACT 
+    -- */
+
+    .contact {
+        /* -- Dimension & Positionnement -- */
+        width: calc((100% / 3) - 10px);
+        float: left;
+        /* -- Décoration -- */
+        margin-left: 10px;
+    }
