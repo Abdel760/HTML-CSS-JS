@@ -7,11 +7,16 @@
         <title>Twitcher !</title>
         <!-- MÉTHODE 1 : Ajouter un fichier CSS à ma page -->
         <link rel="stylesheet" href="css/styles.css">
+        <!-- FontAwesome.io -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
     <body>
         <div id="page">
             <div class="header">
-                <div class="BandeauDuHaut"></div>
+                <div class="BandeauDuHaut">
+                        <img src="img/twitch-logo.png" 
+                        alt="Twitch">
+                </div>
                     <ul>
                         <li class="current">
                             <a href="index.html">Accueil</a></li>
@@ -22,16 +27,14 @@
             <div class="contenu">
                     <h1>Twitcher </h1>
                 <div class="illustration">
-                    <img src="img/twitch-logo.png" 
-                        alt="Twitch">
+                        <a><iframe src="https://player.twitch.tv/?channel=ogaminglol" frameborder="0" allowfullscreen="true" scrolling="no" height="378" width="100%"></iframe><a href="https://www.twitch.tv/riotgames?tt_content=text_link&tt_medium=live_embed" style="padding:2px 0px 4px; display:block; width:345px; font-weight:normal; font-size:10px; text-decoration:underline;"></a>
                 </div>
                 <div class="article">
-                        <p>Twitch </p>
-                        <p>Plateforme de Streaming</p>
-                        
-                        <p>Twitch, ou Twitch.tv, est un service de streaming et de VOD de jeu vidéo, de sport électronique et d'émissions apparentées lancé en juin 2011.</p>
+                        <h2>Twitch | Plateforme de Streaming </h2>
+                        <p>Twitch, ou Twitch.tv, est un <span>service de streaming</span> et de <em>VOD de jeu vidéo, de sport électronique</em> et <u> d'émissions apparentées lancé en juin 2011.</u></p>
                         <p>Sur ce site, vous pourrais retrouver toutes l'actualités de Twitch et de vos streamer préférés !</p>
                 </div>
+                
             </div> <!-- ./contenu -->
             <div class="footer">
                 <div class="gmap">
@@ -52,9 +55,9 @@
                     </form>
                 </div>
                 <div class="contact">
+                    <h3>Contactez-nous !</h3>
                     <address>
-                        <strong>Twitcher :</strong>
-                        <a href="tel:+33651376919">06 51 37 69 19</a><br>
+                        <a"href="tel:+33651376919> <i class="fa fa-mobile-phone"></i> 06 51 37 69 19 </a><br>
                         <a href="mailto: twitcher@contact.fr">
                             twitcher@contact.fr
                         </a> <br>
@@ -62,6 +65,7 @@
                     </address>
                 
             </div> <!--./footer -->
+            
         </div> <!-- #/page -->
     </body>
 </html>

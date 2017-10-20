@@ -63,10 +63,12 @@ div, a {
     text-decoration: none;
 
     /* -- Modifier la taille de la police --*/
-    font-size: 22px;
+    font-size: 19px;
 
     /* -- Les liens en MAJUSCULE --*/
     text-transform: uppercase;
+    
+    font-weight: bold;
 }
 
 /* --
@@ -100,7 +102,7 @@ a:hover {
 -- */
 
 .current a {
-    color: purple;
+    color: #4f4077;
 }
 
 /*---------------------------------------------------------------------------------------------------------------------------------------|
@@ -131,7 +133,7 @@ a:hover {
 
 body {
     background-color: rgba(209, 208, 208, 0.753);
-    background-image: url("../img/background-twitch.png");
+    background-image: url("../img/twitch-style.jpg");
     background-size: cover;
 }
 
@@ -167,10 +169,12 @@ CONSIGNE :
     /* -- Je ne souhaite que le titre soit en gras -- */
     font-weight: normal;
 
-    /* -- Solid : ligne par défaut, dotted : petit-point, dashed : traits d'union -- */
-    border-bottom: 5px solid rgb(118, 4, 141);
-   
+    background-color: #6441a5;
+    color: white;
 }
+
+/* -- Solid : ligne par défaut, dotted : petit-point, dashed : traits d'union -- */
+/* border-bottom: 5px solid rgb(118, 4, 141); */
 
 .BandeauDuHaut {
     width: 100%;
@@ -216,7 +220,7 @@ CONSIGNE :
          /* -- Décoration -- */
          margin: 0 10px 0 10px;
          font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-         text-align: justify;
+         text-align: center;
     }
 
 /* --
@@ -265,8 +269,10 @@ CONSIGNE :
     .newsletter form {}
     
     .newsletter fieldset {
+        border-radius: 5px;
+        color: purple;
+    }    
     
-    }
     
     .newsletter input {
             width: 91%;
@@ -282,6 +288,7 @@ CONSIGNE :
         background: white;
         font-size: 14px;
         font-weight: bold;
+        cursor: pointer;
     }
 
 /* --
@@ -294,4 +301,29 @@ CONSIGNE :
         float: left;
         /* -- Décoration -- */
         margin-left: 10px;
+    }
+    
+    .contact h3 {
+        color: black;
+        padding-left: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: normal;
+    }
+    .contact address{
+        color: black;
+        padding-left: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .contact address strong {
+        font-size: 16px;
+    }
+
+    .contact address a {
+        color: black;
+        text-decoration: none;
+    }
+
+    .contact address a:hover{
+        text-decoration: underline;
     }
