@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta lang="fr">
+        <meta charset="UTF-8">
+        <title>La confrérie des assassins</title>
+        <meta name="description" content="Ici, vous retrouverez toute l'histoire et l'actualités de la license Assassin's Creed">
+        <link rel="stylesheet" href="../CSS/styles.css">
+    </head>
+    <body>
+        <div class="page">
+            <marquee behavior="scroll"
+                        loop="10"
+                        scrollamount="5"
+                        scrolldelay="1">
+                        Bienvenue sur le site des plus grand fan de la saga Assassin's Creed. Vous pourrais retrouver tout ce qui concerne la license sur ce site</marquee>
+            <div class="topheader"></div>
+            <div class="header">
+                <ul>
+                    <li class="logo"><img src="http://www.gif-maniac.com/gifs/48/48494.gif" 
+                        alt="logo-ac">
+                    </li>
+                    <li class="active"> 
+                        <a href="index.html">Accueil</a>
+                    <li><a href="#">Présentation</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <button onclick="document.getElementById('id01').style.display='block'">Connexion</button>
+                </ul>
+            </div> <!-- ./header -->
+            <div id="id01" class="modal">
+                    
+                    <form class="modal-content animate" action="/action_page.php">
+                      <div class="imgcontainer">
+                        <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                        <img src="../img/avatar-ac.png" alt="Avatar" class="avatar">
+                      </div>
+                  
+                      <div class="container">
+                        <label><b>Pseudo</b></label>
+                        <input type="text" placeholder="Entrer pseudo" name="pseudo" required>
+                  
+                        <label><b>Mot de passe</b></label>
+                        <input type="password" placeholder="Entrer mot de passe" name="psw" required>
+                          
+                        <button type="submit">Connexion</button>
+                        <input type="checkbox" checked="checked"> Se souvenir de moi
+                      </div>
+                  
+                      <div class="container" style="background-color:#f1f1f1">
+                        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Fermer</button>
+                        <span class="psw">Mot de passe <a href="#">oublié ?</a></span>
+                      </div>
+                    </form>
+            </div>
+        </div> <!-- Fin page -->
+    <div id="projecteur">
+        <img src="../img/AC-Back.jpg" 
+            alt="AC-Back">
+    </div>
+        <div class="page">  
+            <div class="section">
+                <aside>
+                    <img src="../img/actu-ac.jpg" 
+                        alt="actu-ac">
+                </aside>
+                <div class="article">
+                    <h3>Les dernières actualités</h3>
+                    <p>Avec Assassin's Creed Origins, Ubisoft a eu la volonté de reprendre sa recette et nous voyons apparaître plusieurs points inédits pour la série, comme différents niveaux de difficulté. <br>
+                        Des "loot boxes" seront également présentes, mais leur fonctionnement devrait rassurer les joueurs soucieux</p>
+                </div>
+                <div class="partenaires">
+                    <img src="../img/ubi.png" alt="LogoUbi">
+                </div> <!-- ./partenaires -->
+
+            </div> <!-- ./Section -->
+        </div> <!-- ./Page -->
+        
+    </body>
+</html>
