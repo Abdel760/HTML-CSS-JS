@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta lang="fr">
+        <meta charset="UTF-8">
+        <!-- Déclaration feuille de style-->
+        <!-- On a 2 possibilités : remettre a 0 toutes les balises css grâçe à la feuille de reset ou normalize.css -->
+        <link rel="stylesheet" href="../CSS/normalize.css">
+        <link rel="stylesheet" href="../CSS/correction.css">
+        <!-- Google Font -->
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+        <!-- Font Awesome | Icons-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <title>Accueil | Correction</title>
+    </head>
+    <body>
+        <!-- Le contenu de ma page -->
+        <div class="page">
+            <p><strong>Bienvenue sur le site qui va vous apprendre à réviser méthodiquement et éfficacement !</strong></p>
+
+            <!--TOPHEADER -->
+            <div class="topheader">
+                <p>Espace clients :
+                    <a href="#">Connexion </a>
+                    |
+                    <a href="#">Inscription</a>
+                </p>
+            </div> <!-- /.topheader -->
+
+            <!--HEADER-->
+            <header>
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="../img/logo_42.png" 
+                            alt="Logo correction">
+                    </a>
+                </div> <!-- /.logo -->
+                
+                <nav>
+                    <ul>
+                        <li class="current"><a href="index.html">Accueil</a></li>
+                        <li><a href="#">Présentation</a></li>
+                        <li><a href="#">Nos méthodes</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
+            </header>
+        </div><!-- /.page -->
+        
+        <!-- PROJECTEUR -->
+        <div id="projecteur">
+            <img src="../img/class42.jpg" 
+                alt="Bandeau">
+        </div> <!-- /#projecteur -->
+       
+        <div class="page">
+            <section>
+                <aside>
+                    <img src="../img/mac.png"
+                         alt="Bouquin">
+                </aside>
+                <article>
+                    <h3>Nos pratiques</h3>
+                    <p>S’interroger sur la correction, c’est s’intéresser à la fois aux démarches d’apprentissage, au statut de l’erreur et à l’évaluation. </p>
+                    <p>Le sujet est vaste, nous l’aborderons autour de quelques questions simples mais indispensables à éclaircir pour adapter les corrections au projet d’apprentissage : </p> 
+                    <p>Pourquoi corriger ? Qu’est-ce que corriger ? Comment corriger ?</p>
+                </article>
+
+                <!-- PARTENAIRES -->
+                <div class="partenaires">
+                    <h2>Nos partenaires</h2>
+                    <ul>
+                        <li><a href="https://nfactory.io/" target="_blank">
+                            <img src="../img/nfactory.png" alt="NFactory"></a></li>
+                        <li><a href="https://campus-saint-marc.com/" target="_blank">
+                            <img src="../img/csm.jpg" alt="Campus saint-marc"></a></li>
+                        <li><a href="http://www.metropole-rouen-normandie.fr/" target="_blank">
+                            <img src="../img/METROPOLE.jpg" alt="Metropole rouen"></a></li>
+                        <li><a href="https://www.credit-agricole.fr/" target="_blank">
+                            <img src="../img/CA.png" alt="Crédit agricole"></a></li>
+                    </ul>
+                </div>
+
+            </section> 
+            <footer>
+
+                <div class="page">
+
+                    <div class="gmap">
+                        <a><iframe src="https://www.google.com/maps/embed?pb=!1m0!4v1508488948939!6m8!1m7!1sk6lHrE7oQUHZ8Q_R4S29ng!2m2!1d37.79106824897961!2d-122.401655034256!3f95.78!4f13.590000000000003!5f0.7820865974627469" width="100%" height="198" frameborder="0" style="border:0" allowfullscreen></iframe></a>
+                    </div>
+
+                    <div class="newsletter">
+                        <form name="newsletter" 
+                         action="newsletter.php" 
+                         method="POST">
+                        
+                            <fieldset>
+                                <legend>Newsletter</legend>
+                                <input type="text" name="nom" placeholder="Nom">
+                                <input type="text" name="prenom" placeholder="Prénom">
+                                <input type="email" name="email" placeholder="E-Mail" required>
+                                <input type="submit" value="M'inscrire !">
+                            </fieldset>
+                        </form>
+
+                    </div>
+
+                    <div class="contact">
+                        <h3>Contactez-nous !</h3>
+                        <address>
+                            <a"href="tel:+33651376919> <i class="fa fa-mobile-phone"></i> 02 35 60 76 07 </a><br>
+                            <a href="mailto: révisions@contact.fr">
+                            révisions@contact.fr</a> <br>
+                            96 Boulevard Bessières<br>
+                            75017 Paris <br>
+                            FRANCE <br> 
+                        </address>
+
+                    </div>
+
+                </div>
+
+            </footer>
+
+        </div> <!-- /.page -->
+
+    </body>
+
+</html>

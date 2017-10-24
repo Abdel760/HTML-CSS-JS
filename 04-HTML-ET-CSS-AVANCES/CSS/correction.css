@@ -1,0 +1,363 @@
+body {
+    background: #1d211c;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Roboto', sans-serif;
+}
+
+.page {
+    /* -- Dimension & positionnement --*/
+    width: 100%;
+    height: auto;
+    max-width: 1000px;
+    
+    /*-- Décoration --*/
+    margin: 40px auto;
+        /*-- est équivalent à
+        margin-top: 40px;
+        margin-bottom: 40px;
+        margin-left: auto;
+        margin-right: auto;
+        margin: 40px auto 40px auto --*/  
+}
+
+.page >p {
+    font-family: 'Roboto', sans-serif;
+    color: white
+}
+
+/*------------------------------------
+|               TOPHEADER            |
+------------------------------------*/
+
+.topheader {
+    /*-- Dimension & positionnement --*/
+    width: 100%;
+    height: 30px;
+    float: left;
+    
+    /*-- Décoration --*/
+    background-image: linear-gradient(180deg, #FFF, rgba(255, 255, 255, 0.97));
+    border-top-left-radius: 5px;
+}
+
+.topheader p {
+    /*-- Décoration --*/
+    font-family: 'Roboto', sans-serif;
+    text-align: right;
+    margin: 0px;
+    line-height: 28px;
+    font-size: 13px;
+    margin: 0 50px 0 0;
+
+}
+
+.topheader p a {
+    color: #78356b;
+    text-decoration: none;
+}
+
+.topheader p a:hover {
+    text-decoration: underline;
+}
+
+/*------------------------------------
+|               HEADER               |
+------------------------------------*/
+
+header {
+    /*-- Dimension & positionnement --*/
+    width: 100%;
+    height: 80px;
+    float: left;
+    background: #FFF;
+}
+
+.logo {
+    width: calc ( 25% - 30px );
+    height: auto;
+    float: left;
+    margin: 10px 0 0 30px;
+}
+
+.logo img {
+    height: 80px;
+    margin-top: -11px;
+    /*-- Quand je travaille avec une image, je précise sois la largeur sois la longueur afin de garder les proportions de celle-ci. 
+    Si je n'ai pas le choix je peux utiliser la propriéte object-fit en sachant qu'elle n'ai pas prise en charge par IE et qu'il me faudras utilisé Polyfil --*/
+}
+
+/*------------------------------------
+|         MENU DU HEADER             |
+------------------------------------*/
+
+nav {
+    width: 75%;
+    height: 100%;
+    float: right;
+}
+
+nav ul {
+    margin: 0px;
+    padding: 0px;
+    text-align: right;
+    margin-right: 80px;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 80px;
+}
+
+nav ul li:last-child {
+    margin-right: 0px;
+}
+
+nav ul li a {
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    text-decoration: none;
+    color: #000;
+    line-height: 80px;
+    text-transform: uppercase;
+}
+
+nav ul li a:hover {
+
+}
+
+nav ul li.current a {
+    color: #78356b;
+}
+
+/*------------------------------------
+|         EL PROJECTOR               |
+------------------------------------*/
+
+#projecteur {
+    width: 100%;
+    height: 400px;
+    float: left;
+}
+
+#projecteur img {
+    width: 100%;
+    height: 630px;
+    object-position: 0px -350px;
+    overflow: hidden;
+    object-fit: cover;
+    border-style: none;
+    text-align: center;
+}
+
+/*------------------------------------
+|         ZONE DE CONTENU            |
+------------------------------------*/
+
+section {
+    /*-- Dimension & positionnement --*/
+    width: 100%;
+    height: auto;
+    float: left;
+    /*-- Décoration --*/
+    background-color: rgba(255, 255, 255, 0.91);
+    margin-top: -75px;
+}
+
+section aside {
+    /*-- Dimension & positionnement --*/
+    width: 50%;
+    height: auto;
+    float: left;
+    min-height: 310px;
+    text-align: center;
+    /*-- Décoration --*/
+}
+
+section aside img {
+    /*-- Dimension & positionnement --*/
+    width: 70%;
+    max-width: 100%;
+    margin-top: 60px;
+    /*-- Décoration --*/
+}
+
+section article {
+    /*-- Dimension & positionnement --*/
+    width: 50%;
+    height: auto;
+    float: left;
+    /*-- Décoration --*/
+    padding: 1% 5% 0 5%;
+    box-sizing: border-box;
+}
+
+section article h3 {
+    /*-- Dimension & positionnement --*/
+        
+    /*-- Décoration --*/
+    text-align: center;
+    font-weight: normal;
+    font-size: 30px;
+    color: #4d584a;
+}
+
+section article p {
+    /*-- Dimension & positionnement --*/
+
+    /*-- Décoration --*/
+    font-family: 'Roboto', sans-serif;
+    font-family: 13px;
+    color: #000;
+    text-align: justify;
+}
+
+/*------------------------------------
+|            PARTENAIRES             |
+------------------------------------*/
+
+.partenaires {
+    /*-- Dimension & positionnement --*/
+    width: 100%;
+    height: auto;
+    float: left;
+    /*-- Décoration --*/
+    background-image: linear-gradient(180deg, #EEE 0%, #FFF 30%);
+    margin-top: -4px;
+    padding-bottom: 20px;
+}
+
+.partenaires h2 {
+    /*-- Dimension & positionnement --*/
+    text-align: center;
+    font-weight: normal;
+    font-size: 30px;
+    color: #4d584a;
+    /*-- Décoration --*/
+}
+
+.partenaires ul {
+    /*-- Dimension & positionnement --*/
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    /*-- Décoration --*/
+}
+
+.partenaires ul li {
+    /*-- Dimension & positionnement --*/
+    width: calc(98% / 4);
+    display: inline-block;
+    /*-- Décoration --*/
+}
+
+.partenaires ul li img {
+    /*-- Dimension & positionnement --*/
+    max-width: 100%;
+    /*width: 50%;*/
+    height: 50px;
+    filter: grayscale(50%);
+
+    /*-- Décoration --*/
+}
+
+.partenaires ul li img:first-child {
+
+}
+
+/*------------------------------------
+|            PIED DE PAGE            |
+------------------------------------*/
+
+
+footer {
+    width: 100%;
+    height: auto;
+    float: left;
+   /* background: white;*/
+    padding-bottom: 40px;
+}
+
+/* --
+GOOGLE MAPS 
+-- */
+
+.gmap {
+   /* -- Dimension & Positionnement -- */
+   width: calc((100% / 3) - 10px);
+   float: left;
+   /* -- Décoration -- */ 
+   margin-left: 10px;
+}
+/* --
+NEWSLETTER 
+-- */
+
+.newsletter {
+    /* -- Dimension & Positionnement -- */
+    width: calc((100% / 3) - 10px);
+    float: left;
+    /* -- Décoration -- */
+    margin-left: 10px;
+}
+
+.newsletter form {}
+
+.newsletter fieldset {
+    border-radius: 5px;
+    color: white;
+}    
+
+
+.newsletter input {
+        width: 91%;
+        height: 25px;
+        margin-bottom: 5px;
+        padding: 5px 10px;
+}
+
+.newsletter input [type=submit] {
+    width: 100%;
+    height: 35px;
+    border: 0;
+    background: white;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+
+.contact {
+    /* -- Dimension & Positionnement -- */
+    width: calc((100% / 3) - 10px);
+    float: left;
+    /* -- Décoration -- */
+    margin-left: 10px;
+}
+
+.contact h3 {
+    color: white;
+    padding-left: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+}
+.contact address{
+    color: white;
+    padding-left: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.contact address strong {
+    font-size: 16px;
+}
+
+.contact address a {
+    color: white;
+    text-decoration: none;
+}
+
+.contact address a:hover{
+    text-decoration: underline;
+}
