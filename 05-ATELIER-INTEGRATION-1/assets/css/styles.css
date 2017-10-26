@@ -1,0 +1,246 @@
+body {
+    background: url(../img/fond.jpg) no-repeat;
+    background-size: cover;
+}
+
+main {
+    /* -- Ma page fera 1300px de large -- */
+    max-width: 1300px;
+    width: 100%;
+
+    /* -- Sa hauteur s'adaptera en fonction du contenu -- */
+    height: auto;
+
+    /* -- Elle sera centrée au milieu de la page -- */
+    margin: 0 auto;
+}
+
+.mt-40 {
+    margin-top: 40px;
+}
+
+main > p {
+    font-family: Arial;
+    color:  #ffffff;
+    font-size: 13px;
+    text-align: center;
+}
+
+main > p span {
+    text-decoration: underline;
+}
+
+/*------------------------------------
+|               HEADER               |
+------------------------------------*/
+
+header {
+    /* -- Dimensions et positionnement -- */
+    width: 100%;
+    height: 50px;
+    float: left;
+    /* -- Décoration -- */
+    background: -webkit-linear-gradient(-90deg, #ffffff 0%, #dddddd 100%);
+    background: -moz-linear-gradient(-90deg, #ffffff 0%, #dddddd 100%);
+    background: -o-linear-gradient(-90deg, #ffffff 0%, #dddddd 100%);
+    background: -ms-linear-gradient(-90deg, #ffffff 0%, #dddddd 100%);
+    background: linear-gradient(180deg, #ffffff 0%, #dddddd 100%);
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.65);
+}
+
+/*------------------------------------
+|               TRADUCTION           |
+------------------------------------*/
+
+header > div {
+    width: 25%;
+    height: 19px;
+    margin: 15px 0 0 30px;
+    float: left;
+}
+
+header > div > p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    color: black;
+    text-transform: uppercase;
+    float: left;
+    margin: 4px 5px 0 0;
+}
+
+/* -- Drapeau FR -- */
+header > div > a:nth-child(2) {
+    display: block;
+    width: 28px;
+    height: 19px;
+    float: left;
+    text-indent: -9000px;
+    background: url(../img/drapeaux.png) no-repeat;
+    background-position: -71px;
+    }
+
+/* -- Drapeau EN -- */
+header > div > a:last-child {
+    display: block;
+    width: 28px;
+    height: 19px;
+    float: left;
+    text-indent: -9000px;
+    background: url(../img/drapeaux.png) no-repeat;
+    background-position: -105px;
+    transition: 0.1s ease-in-out;
+}
+
+header > div > a:nth-child(2):hover, header > div > a:last-child:hoover {
+    background-position-y: 0px;
+} 
+
+/*------------------------------------
+|               NAVIGATION           |
+------------------------------------*/
+
+header > nav {
+    width: auto;
+    height: auto;
+    float: right;
+    margin-right: 174px;
+}
+
+header > nav ul {
+    margin: 0;
+    padding: 0;
+}
+
+header > nav ul li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+header > nav ul li a {
+    font-family: 'Roboto Condensed', sans-serif;
+    color:  #202020;
+    font-size: 16px;
+    text-decoration: none;
+    line-height: 48px;
+}
+
+header > nav ul li a:hover {
+    text-decoration: underline;
+}
+
+header > nav ul li.current a {
+    color:  #3060a7;
+    text-decoration: underline;
+}
+
+header > nav li:nth-child(3) a {
+    color:  #fe3224;
+}
+
+/*------------------------------------
+|               PAGE                 |
+------------------------------------*/
+
+section {
+    /* -- Dimensions et positionnemnt -- */
+    width: 1300px;
+    height: 750px;
+    background: url(../img/FondPage.jpg);
+}
+
+.menu {
+    /* -- Dimensions & positionnement -- */
+    width: 339px;
+    height: 681px;
+    margin-left: 173px;
+    /* -- Décoration -- */ 
+    background: -webkit-linear-gradient(-90deg, #ffffff 0%, #bbbbbb 100%);
+    background: -moz-linear-gradient(-90deg, #ffffff 0%, #bbbbbb 100%);
+    background: -o-linear-gradient(-90deg, #ffffff 0%, #bbbbbb 100%);
+    background: -ms-linear-gradient(-90deg, #ffffff 0%, #bbbbbb 100%);
+    background: linear-gradient(180deg, #ffffff 0%, #bbbbbb 100%);   
+}
+
+.menu img {
+    margin-top: 33px;
+    margin-left: 25px;
+}
+
+.menu > ul {
+    margin: 0;
+    padding: 0;
+    margin-top: 10px;
+}
+
+.menu > ul li:only-child {
+    width: 339px;
+    height: 69px;
+    display: inline-block;
+    text-align: center;
+    background: -webkit-linear-gradient(-90deg, #fbfbfb 0%, #bbbbbb 100%);
+    background: -moz-linear-gradient(-90deg, #fbfbfb 0%, #bbbbbb 100%);
+    background: -o-linear-gradient(-90deg, #fbfbfb 0%, #bbbbbb 100%);
+    background: -ms-linear-gradient(-90deg, #fbfbfb 0%, #bbbbbb 100%);
+    background: linear-gradient(180deg, #fbfbfb 0%, #bbbbbb 100%);
+}
+
+.menu > ul li:nth-child(2) {
+    width: 339px;
+    height: 69px;
+    display: inline-block;
+    text-align: center;
+    background: -webkit-linear-gradient(-90deg, #fbfbfb 0%, #bbbbbb 100%);
+    background: -moz-linear-gradient(-90deg, #fbfbfb 0%, #bbbbbb 100%);
+    background: -o-linear-gradient(-90deg, #fbfbfb 0%, #bbbbbb 100%);
+    background: -ms-linear-gradient(-90deg, #fbfbfb 0%, #bbbbbb 100%);
+    background: linear-gradient(180deg, #fbfbfb 0%, #bbbbbb 100%);
+}
+
+.menu > ul li:nth-child(3) {
+    width: 339px;
+    height: 69px;
+    display: inline-block;
+    text-align: center;
+    background: -webkit-linear-gradient(-90deg, #fbfbfb 0%, #bbbbbb 100%);
+    background: -moz-linear-gradient(-90deg, #fbfbfb 0%, #bbbbbb 100%);
+    background: -o-linear-gradient(-90deg, #fbfbfb 0%, #bbbbbb 100%);
+    background: -ms-linear-gradient(-90deg, #fbfbfb 0%, #bbbbbb 100%);
+    background: linear-gradient(180deg, #fbfbfb 0%, #bbbbbb 100%);
+}
+
+.menu > ul li:last-child {
+    width: 339px;
+    height: 69px;
+    display: inline-block;
+    text-align: center;
+    background: -webkit-linear-gradient(-90deg, #fbfbfb 0%, #bbbbbb 100%);
+    background: -moz-linear-gradient(-90deg, #fbfbfb 0%, #bbbbbb 100%);
+    background: -o-linear-gradient(-90deg, #fbfbfb 0%, #bbbbbb 100%);
+    background: -ms-linear-gradient(-90deg, #fbfbfb 0%, #bbbbbb 100%);
+    background: linear-gradient(180deg, #fbfbfb 0%, #bbbbbb 100%);
+}
+
+.menu > ul li a {
+    font-family: 'Roboto Condensed' sans-serif;
+    font-size: 18px;
+}
+
+.menu > ul li a:first-child {
+    color:  #fe3626;
+    text-align: left;
+}
+
+.menu > ul li a:nth-child(2) {
+    color:  #bc8242;
+    text-align: left;
+}
+
+.menu > ul li a:nth-child(3) {
+    color:  #3860a7;
+    text-align: left;
+}
+
+.menu > ul li a:last-child {
+    color:  #08a640;
+    text-align: none;
+}
