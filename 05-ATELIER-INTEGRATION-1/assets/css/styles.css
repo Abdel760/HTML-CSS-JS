@@ -39,6 +39,8 @@ header {
     width: 100%;
     height: 50px;
     float: left;
+    position: relative;
+    z-index: 1;
     /* -- Décoration -- */
     background: -webkit-linear-gradient(-90deg, #ffffff 0%, #dddddd 100%);
     background: -moz-linear-gradient(-90deg, #ffffff 0%, #dddddd 100%);
@@ -138,109 +140,220 @@ header > nav li:nth-child(3) a {
 }
 
 /*------------------------------------
-|               PAGE                 |
+|             PROJECTEUR             |
 ------------------------------------*/
 
-section {
-    /* -- Dimensions et positionnemnt -- */
-    width: 1300px;
-    height: 750px;
-    background: url(../img/FondPage.jpg);
+.projecteur {
+    width: 100%;
+    height: 650px;
+    float: left;
+    overflow: hidden;
+    position: relative;
 }
 
-.menu {
-    /* -- Dimensions & positionnement -- */
-    width: 339px;
-    height: 681px;
-    margin-left: 173px;
-    /* -- Décoration -- */ 
+.projecteur nav {
+    width: 340px;
+    height: auto;
+    position: absolute;
+    left: 170px;
+    top: 0px;
+
     background: -webkit-linear-gradient(-90deg, #ffffff 0%, #bbbbbb 100%);
     background: -moz-linear-gradient(-90deg, #ffffff 0%, #bbbbbb 100%);
     background: -o-linear-gradient(-90deg, #ffffff 0%, #bbbbbb 100%);
     background: -ms-linear-gradient(-90deg, #ffffff 0%, #bbbbbb 100%);
-    background: linear-gradient(180deg, #ffffff 0%, #bbbbbb 100%);   
+    background: linear-gradient(180deg, #ffffff 0%, #bbbbbb 100%);
+    border-left: 5px solid #c43e3e;
+    text-align: center;
 }
 
-.menu img {
-    margin-top: 33px;
-    margin-left: 25px;
+.projecteur nav a img {
+    margin: 20px 0;
 }
 
-.menu > ul {
+.projecteur nav ul  {
     margin: 0;
     padding: 0;
-    margin-top: 10px;
 }
 
-.menu > ul li:only-child {
-    width: 339px;
-    height: 69px;
-    display: inline-block;
-    text-align: center;
+.projecteur ul li {
+    list-style: none;
+    width: 100%;
+    height: 57px;
     background: -webkit-linear-gradient(-90deg, #fbfbfb 0%, #bbbbbb 100%);
     background: -moz-linear-gradient(-90deg, #fbfbfb 0%, #bbbbbb 100%);
     background: -o-linear-gradient(-90deg, #fbfbfb 0%, #bbbbbb 100%);
     background: -ms-linear-gradient(-90deg, #fbfbfb 0%, #bbbbbb 100%);
     background: linear-gradient(180deg, #fbfbfb 0%, #bbbbbb 100%);
+    padding-top: 15px;
 }
 
-.menu > ul li:nth-child(2) {
-    width: 339px;
-    height: 69px;
-    display: inline-block;
-    text-align: center;
-    background: -webkit-linear-gradient(-90deg, #fbfbfb 0%, #bbbbbb 100%);
-    background: -moz-linear-gradient(-90deg, #fbfbfb 0%, #bbbbbb 100%);
-    background: -o-linear-gradient(-90deg, #fbfbfb 0%, #bbbbbb 100%);
-    background: -ms-linear-gradient(-90deg, #fbfbfb 0%, #bbbbbb 100%);
-    background: linear-gradient(180deg, #fbfbfb 0%, #bbbbbb 100%);
-}
-
-.menu > ul li:nth-child(3) {
-    width: 339px;
-    height: 69px;
-    display: inline-block;
-    text-align: center;
-    background: -webkit-linear-gradient(-90deg, #fbfbfb 0%, #bbbbbb 100%);
-    background: -moz-linear-gradient(-90deg, #fbfbfb 0%, #bbbbbb 100%);
-    background: -o-linear-gradient(-90deg, #fbfbfb 0%, #bbbbbb 100%);
-    background: -ms-linear-gradient(-90deg, #fbfbfb 0%, #bbbbbb 100%);
-    background: linear-gradient(180deg, #fbfbfb 0%, #bbbbbb 100%);
-}
-
-.menu > ul li:last-child {
-    width: 339px;
-    height: 69px;
-    display: inline-block;
-    text-align: center;
-    background: -webkit-linear-gradient(-90deg, #fbfbfb 0%, #bbbbbb 100%);
-    background: -moz-linear-gradient(-90deg, #fbfbfb 0%, #bbbbbb 100%);
-    background: -o-linear-gradient(-90deg, #fbfbfb 0%, #bbbbbb 100%);
-    background: -ms-linear-gradient(-90deg, #fbfbfb 0%, #bbbbbb 100%);
-    background: linear-gradient(180deg, #fbfbfb 0%, #bbbbbb 100%);
-}
-
-.menu > ul li a {
-    font-family: 'Roboto Condensed' sans-serif;
+.projecteur ul li a {
+    font-family: 'Roboto Condensed', sans-serif;
     font-size: 18px;
+    color: black; 
+    text-decoration: none;
+}  
+
+.projecteur ul li a:hover {
+    text-decoration: underline;
 }
 
-.menu > ul li a:first-child {
-    color:  #fe3626;
-    text-align: left;
+.projecteur ul li span {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 15px;
+    color: black;
+    font-style: italic;
+    font-weight: 300;
 }
 
-.menu > ul li a:nth-child(2) {
-    color:  #bc8242;
-    text-align: left;
+.projecteur nav ul li:first-child a {
+    color: #fe3626;
 }
 
-.menu > ul li a:nth-child(3) {
-    color:  #3860a7;
-    text-align: left;
+.projecteur nav ul li:nth-child(2) a {
+    color: #bc8242;
 }
 
-.menu > ul li a:last-child {
-    color:  #08a640;
-    text-align: none;
+.projecteur nav ul li:nth-child(3) a {
+    color: #3860a7;
 }
+
+.projecteur nav ul li:last-child a {
+    color: #08a640;
+}
+
+/*------------------------------------
+|         COMPOSER SÉJOUR            |
+------------------------------------*/
+
+.bandeaurouge {
+    width: 100%;
+    height: 50px;
+    float: left;
+    text-align: center;
+    background-color:  #fe3224;
+    position: relative;
+}
+
+.bandeaurouge img {
+    margin-top: -16px;
+    position: absolute;
+    left: 50%;
+    top: 4px;
+    transform: translateX(-50%)
+}
+
+.composersejour {
+    /* -- Dimensions et positionnement -- */
+    width: 100%;
+    height: 120px;
+    float: left;
+    border-bottom-right-radius: 10px;
+    background: -webkit-radial-gradient(circle farthest-side at 50%, #ffffff 0%, #febeb9 100%);
+    background: -moz-radial-gradient(circle farthest-side at 50%, #ffffff 0%, #febeb9 100%);
+    background: -o-radial-gradient(circle farthest-side at 50%, #ffffff 0%, #febeb9 100%);
+    background: -ms-radial-gradient(circle farthest-side at 50%, #ffffff 0%, #febeb9 100%);
+    background: radial-gradient(circle farthest-side at 50%, #ffffff 0%, #febeb9 100%);  
+}
+
+.composersejour p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    color: black;
+    text-align: center;
+}
+
+.composersejour p span {
+    text-decoration: underline;
+}
+
+.composersejour p span.red {
+    color: #fe3224;
+    text-decoration: inherit;
+}
+
+/*------------------------------------
+|         BOUTON SÉJOUR              |
+------------------------------------*/
+.btn-sejour a {
+    width: 346px;
+    height: 37px;
+    display: block;
+
+    background: -webkit-linear-gradient(-90deg, #fe8e86 0%, #fe3224 100%);
+    background: -moz-linear-gradient(-90deg, #fe8e86 0%, #fe3224 100%);
+    background: -o-linear-gradient(-90deg, #fe8e86 0%, #fe3224 100%);
+    background: -ms-linear-gradient(-90deg, #fe8e86 0%, #fe3224 100%);
+    background: linear-gradient(180deg, #fe8e86 0%, #fe3224 100%);
+
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 18px;
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    line-height: 35px;
+
+    margin: 0 auto;
+    position: relative;
+}
+
+.btn-sejour {
+    width: 346px;
+    height: 37px;
+    position: relative;
+    margin: 0 auto;
+}
+
+.btn-sejour img {
+    position: absolute;
+    bottom: -10px;
+    right: 0px;
+}
+
+.btn-sejour .cursor-main {
+    position: absolute;
+    bottom: -20px;
+    right: 0px;
+
+    visibility: hidden;
+    opacity: 0;
+
+    transition: 0.22s ease-in-out
+}
+
+.btn-sejour:hover .cursor-main {
+    visibility: visible;
+    opacity: 1;
+    bottom: -8px;
+    transform: rotate(-15deg);
+}
+
+.btn-sejour a::before {
+    width: 147px;
+    height: 36px;
+    background: url(../img/Fleched.png);
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 365px;
+}
+
+.btn-sejour a::after {
+    width: 147px;
+    height: 36px;
+    transform: rotate(180deg);
+    background: url(../img/Fleched.png);
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 365px;
+}
+
+/*------------------------------------
+|                MENU                |
+------------------------------------*/

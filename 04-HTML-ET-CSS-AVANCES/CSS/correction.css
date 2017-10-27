@@ -33,13 +33,12 @@ h1, h2, h3, h4, h5, h6 {
 
 .topheader {
     /*-- Dimension & positionnement --*/
-    width: 100%;
-    height: 30px;
-    float: left;
-    
-    /*-- Décoration --*/
-    background-image: linear-gradient(180deg, #FFF, rgba(255, 255, 255, 0.97));
-    border-top-left-radius: 5px;
+    background: -webkit-linear-gradient(-90deg, #ffffff 0%, #dddddd 100%);
+    background: -moz-linear-gradient(-90deg, #ffffff 0%, #dddddd 100%);
+    background: -o-linear-gradient(-90deg, #ffffff 0%, #dddddd 100%);
+    background: -ms-linear-gradient(-90deg, #ffffff 0%, #dddddd 100%);
+    background: linear-gradient(180deg, #ffffff 0%, #dddddd 100%);
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.65);
 }
 
 .topheader p {
@@ -175,12 +174,26 @@ section aside {
     /*-- Décoration --*/
 }
 
+
+
 section aside img {
     /*-- Dimension & positionnement --*/
     width: 70%;
     max-width: 100%;
     margin-top: 60px;
+    position: relative;
     /*-- Décoration --*/
+}
+
+.loupe {
+    position: absolute;
+}
+
+.loupe img {
+    width: 40px;
+    height: 40px;
+    margin-left: 470px;
+    margin-top: -20px;
 }
 
 section article {
