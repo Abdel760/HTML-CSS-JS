@@ -1,0 +1,30 @@
+@media screen and (min-width: 480px){
+    /** ...styles for 480px and up go here **/
+}
+body {
+    background: #051822;
+    background-size: cover;
+}
+
+.row {
+    margin: 0px auto;
+    text-align: center;
+    
+}
+
+.col-xs-12 {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 20px;
+    text-decoration: none;
+    line-height: 26px;
+    position: absolute;
+}
+
+.col-xs-12 a {
+    color: white;
+}
+
+
+.projecteur img {
+    object-fit: cover;   
+}
