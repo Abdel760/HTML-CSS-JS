@@ -46,8 +46,7 @@ document.write(Annuaire[1][1]);
     /* --------------------------------------------------------
                          ~ EXERCICE ~
         
-        fdsf
-
+     
     ----------------------------------------------------------*/
 
 // -- Correction
@@ -64,6 +63,67 @@ console.log(AnnuaireDesStagiaires[1].prenom);
 console.log(AnnuaireDesStagiaires[2].prenom);
 
 document.write(AnnuaireDesStagiaires[0][1]);
+
+// -- Correction : 🙊
+
+var AnnuaireDesStagiaires = [
+    {prenom: "Hugo", nom: "LIEGEARD", tel: "0783 97 15 15"},
+    {prenom: "Benjamin", nom: "JOURAND", tel: "XXXX XX XX XX"},
+    {prenom: "Hocine", nom: "ALILI", tel: "XXXX XX XX XX"}
+];
+
+console.log(AnnuaireDesStagiaires);
+console.log(AnnuaireDesStagiaires[0]['prenom']);
+console.log(AnnuaireDesStagiaires[1].prenom);
+console.log(AnnuaireDesStagiaires[2].prenom);
+
+// -- Exemple de Tableau 3D
+
+var Contacts = [
+
+    {
+        prenom      : "Hugo",
+        nom         : "LIEGEARD",
+        coordonnees : {
+                          email   : "wf3@hl-media.fr",
+                          adresse : {
+                                        ville  : "Ducos",
+                                        cp     : 97224,
+                                        region : "Martinique",
+                                        pays   : "France"
+                                    },
+                          tel     : {
+                                        fixe : "0596 108 328",
+                                        fax  : "0596 108 632",
+                                        port : "0783 97 15 15"
+                                    }
+                      }
+    },
+    {
+        prenom      : "Rodrigue",
+        nom         : "NOUEL",
+        coordonnees : {
+                          email   : "wellcommunication.net@gmail.com",
+                          adresse : {
+                                        ville  : "Fort-de-France",
+                                        cp     : 97200,
+                                        region : "Martinique",
+                                        pays   : "France"
+                                    },
+                          tel     : {
+                                        fixe : "0596 XXX XXX",
+                                        fax  : "",
+                                        port : "0696 07 04 34"
+                                    }
+                      }
+    },
+
+];
+
+console.log(Contacts);
+console.log(Contacts[0].coordonnees.tel.fixe);
+console.log(Contacts[1].coordonnees.tel.fixe);
+
 
 /*-------------------------------------
 |        ~ AJOUTER UN ÉLEMENT ~       |

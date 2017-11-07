@@ -3,7 +3,7 @@
 -------------------------------------*/
 
 var debutDePhrase       ="Aujourd'hui ";
-var dateDuJour          = new Date ();
+var dateDuJour          = new Date();
 var suiteDePhrase       = ", sont présents : ";
 var nombreDeStagiaires  = 21;
 var finDePhrase         = " stagiares. <br>";
