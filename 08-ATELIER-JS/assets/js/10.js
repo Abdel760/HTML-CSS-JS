@@ -26,6 +26,8 @@ var PremierTrimestre = [
                         Français   : 12,
                         Histoire   : 19,
                         Physique   : 14,
+                        Art        : 2,
+                        EPS        : 10,
                         }
     },
     {
@@ -35,6 +37,7 @@ var PremierTrimestre = [
                         Français   : 10,
                         Histoire   : 12,
                         Physique   : 13,
+                        Chinois    : 11,
                         }
     },
     {
@@ -44,6 +47,7 @@ var PremierTrimestre = [
                         Français   : 14,
                         Histoire   : 8,
                         Physique   : 13,
+                        Anglais    : 18,
                         }
     },
     {
@@ -62,57 +66,58 @@ var PremierTrimestre = [
                         Français   : 13,
                         Histoire   : 7,
                         Physique   : 10,
+                        EPS        : 12,
                         }
     },
 ];
 
-console.log(PremierTrimestre);
+l(PremierTrimestre);
 
-// -- Premier Trimestre Hugo LIEGEARD
-document.write(PremierTrimestre[0].nom);
-document.write(PremierTrimestre[0].prenom);
-document.write(PremierTrimestre[0].moyenne["Français"]);
-document.write(PremierTrimestre[0].moyenne["Histoire"]);
-document.write(PremierTrimestre[0].moyenne["Physique"]);
+/* -------------------------------
+             CORRECTION :
+-------------------------------- */
 
-// -- Premier Trimestre Abdel-illah BOUKHATEB
-document.write(PremierTrimestre[1].nom);
-document.write(PremierTrimestre[1].prenom);
-document.write(PremierTrimestre[1].moyenne["Français"]);
-document.write(PremierTrimestre[1].moyenne["Histoire"]);
-document.write(PremierTrimestre[1].moyenne["Physique"]);
+// -- Petite fonction de raccourci (lesFlemmard.js)
+function w(t) {
+    document.write(t);
+}
 
-// -- Premier Trimestre JM BISSICK
-document.write(PremierTrimestre[2].nom);
-document.write(PremierTrimestre[2].prenom);
-document.write(PremierTrimestre[2].moyenne["Français"]);
-document.write(PremierTrimestre[2].moyenne["Histoire"]);
-document.write(PremierTrimestre[2].moyenne["Physique"]);
+function l(e) {
+    console.log(e);
+}
 
-// -- Premier Trimestre Nathan HEGO
-document.write(PremierTrimestre[3].nom);
-document.write(PremierTrimestre[3].prenom);
-document.write(PremierTrimestre[3].moyenne["Français"]);
-document.write(PremierTrimestre[3].moyenne["Histoire"]);
-document.write(PremierTrimestre[3].moyenne["Physique"]);
+w('<ol>');
+// -- Je souhaite afficher la liste de mes étudiants
+for(let i = 0 ; i < PremierTrimestre.length ; i++) {
+    
+    // -- On récupère l'Objet Etudiant de l'Itération
+    let Etudiant = PremierTrimestre[i];
+    
+    // -- Aperçu dans la console
+    l(Etudiant);
 
-// -- Premier Trimestre David PAYEN
-document.write(PremierTrimestre[4].nom);
-document.write(PremierTrimestre[4].prenom);
-document.write(PremierTrimestre[4].moyenne["Français"]);
-document.write(PremierTrimestre[4].moyenne["Histoire"]);
-document.write(PremierTrimestre[4].moyenne["Physique"]);
+    var NombreMatiere = 0, SommeNotes = 0;
 
-var PremierTrimestre = new Array();
+    // -- Afficher le Prénom et le Nom d'un Étudiant
+    w('<li>');
+        w(Etudiant.nom + " " + Etudiant.prenom);
+        // -- Afficher la moyenne de l'étudiant aux différentes matières
+        w('<ul>')
+            for(let Matiere in Etudiant.moyenne) {
+                l(Matiere);
+                l(Etudiant.moyenne[Matiere]);
 
-document.write(
-"<ol>"
-  + "<li>" + PremierTrimestre[0] + "nom" + "</li>" 
-  + "<li>" + PremierTrimestre[1] + "</li>"
-  + "<li>" + PremierTrimestre[2] + "</li>" 
-  + "<li>" + PremierTrimestre[3] + "</li>"
-  + "<li>" + PremierTrimestre[4] + "</li>" 
-  +
-"</ol>"
-);
+                NombreMatiere++;
+                SommeNotes += Etudiant.moyenne[Matiere];
 
+                w('<li>');
+                    w(Matiere + " : " + Etudiant.moyenne[Matiere]);
+                w('</li>');
+            } // -- Fin de la boucle matière
+            w('<li>');
+                w("<strong>Moyenne Générale :</strong>" + (SommeNotes / NombreMatiere).toFixed(2) );
+            w('</li>');
+        w('</ul>');    
+    w('</li>');
+}
+w('<ol>');
