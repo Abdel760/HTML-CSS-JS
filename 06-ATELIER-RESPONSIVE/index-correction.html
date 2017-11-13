@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <!-- Encodage pour les accents -->
+        <meta charset="UTF-8">
+        <!-- Titre de la page -->
+        <title>Atelier</title>
+        <!-- Affichage sans zoom pour les mobiles -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Pour Internet Explorer: s'assurer qu'il utilise la dernière version du moteur de rendu -->
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" 
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" 
+        crossorigin="anonymous">
+        <!-- Style CSS -->
+        <link rel="stylesheet" href="./assets/css/styles.css">
+        <!-- Google fonts -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400">
+        <!-- Font awesome | Icons -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!-- HTML5Shiv & Respond JS-->
+        <!--[if lt IE 9]>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    </head>
+    <body data-spy="scroll" data-target=".navbar" data-offset="50"></bodydata-spy>
+        <main class="container-fluid">
+            <div class="row">
+                <!-- LE PROJECTEUR  -->
+                <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                        <!-- Indicators -->
+                        <ol class="carousel-indicators">
+                          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                          <li data-target="#myCarousel" data-slide-to="1"></li>
+                          <li data-target="#myCarousel" data-slide-to="2"></li>
+                        </ol>
+                      
+                        <!-- Wrapper for slides -->
+                        <div class="carousel-inner">
+                          <div class="item active">
+                            <img src="./assets/img/rouenbandeau.jpg" alt="Rouen">
+                          </div>
+                      
+                          <div class="item">
+                            <img src="./assets/img/rouen-fond2.jpg" alt="Seine">
+                          </div>
+                      
+                          <div class="item">
+                            <img src="./assets/img/cathedrale-rouen.jpg" alt="Cathédrale">
+                          </div>
+                        </div>
+                      
+                        <!-- Left and right controls -->
+                        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                          <span class="glyphicon glyphicon-chevron-left"></span>
+                          <span class="sr-only">Précédent</span>
+                        </a>
+                        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                          <span class="glyphicon glyphicon-chevron-right"></span>
+                          <span class="sr-only">Suivant</span>
+                        </a>
+                      </div>
+                <!-- LA NAVIGATION -->
+                <nav class="col-xs-12">
+                    <ul class="list-inline">
+                        <li><a href="index-correction">Accueil</a></li>
+                        <li><a href="#Nos-Videos">Nos vidéos</a></li>
+                        <li><a href="#Nos-Photos">Nos photos</a></li>
+                    </ul>
+                </nav>
+                <!-- SECTION VIDÉOS -->
+                <section id="Nos-Videos" class="col-xs-12">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-6"> <iframe width="560" height="315" src="https://www.youtube.com/embed/yxW6DnHfHPI?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe> </div>
+                            <div class="col-md-6"> <iframe width="560" height="315" src="https://www.youtube.com/embed/OgVKqWOlRkk?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe> </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- SECTION PHOTOS -->
+                <section id="Nos-Photos" class="col-xs-12">
+                    <div class="container">
+                        <div class="row">
+                            <aside class="col-md-6">
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <img class="img-responsive thumbnail" src="./assets/img/rouen-placevieuxmarche.jpg" alt="Place du vieux marché">
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <img class="img-responsive thumbnail" src="./assets/img/rouen-quai.jpg" alt="Quai de Rouen">
+                                    </div>
+                                </div>
+                            </aside>
+                            <article class="col-md-6">
+                                <h3>La ville de Rouen</h3>
+                                <p>Rouen est une commune du Nord-Ouest de la France traversée par la Seine, préfecture du département de la Seine-Maritime et préfecture de la région Normandie. <br>
+                                        Comptant 110 755 habitants, elle est la deuxième ville de Normandie après Le Havre et la trente-cinquième ville la plus peuplée de France. <br>
+                                        Elle n'en demeure pas moins capitale administrative (préfecture) de la région Normandie depuis le 28 septembre 2016 <br>
+                                        Au 1er janvier 2016, son agglomération compte 466 021 habitants. <br> 
+                                        Son bassin d'emploi, le premier de la région, atteint 829 210 habitants, ce qui fait de Rouen un grand pôle économique régional et national. <br>
+                                        Rouen est le siège d'une intercommunalité, Métropole Rouen Normandie, qui est la sixième métropole de France et la deuxième du Grand-Ouest français.</p>
+                            </article>
+                            <div class="col-sm-12">
+                                <div class="row">
+                                    <div class="col-md-3 col-sm-6">
+                                        <img class="img-responsive thumbnail" src="./assets/img/cathedrale-rouen1.jpg" alt="Cathedrale de Rouen">
+                                    </div>
+                                    <div class="col-md-3 col-sm-6">
+                                        <img class="img-responsive thumbnail" src="./assets/img/Docks-76.jpg" alt="Docks 76">
+                                    </div>
+                                    <div class="col-md-3 col-sm-6">
+                                        <img class="img-responsive thumbnail" src="./assets/img/eglise-rouen.jpg" alt="Eglise de Rouen">
+                                    </div>
+                                    <div class="col-md-3 col-sm-6">
+                                        <img class="img-responsive thumbnail" src="./assets/img/ruedugros-rouen.jpg" alt="Rue du Gros-Horloge">
+                                    </div>
+                                </div> <!-- /.row -->
+                            </div> <!-- /.col-sm-12 -->
+                        </div> <!-- /.row -->
+                    </div>
+                </section>
+                <!-- SECTION VIDÉOS -->
+                <section id="Videos-suite" class="col-xs-12">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-6"> <iframe width="560" height="315" src="https://www.youtube.com/embed/yxW6DnHfHPI?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe> </div>
+                                <div class="col-md-6"> <iframe width="560" height="315" src="https://www.youtube.com/embed/OgVKqWOlRkk?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe> </div>
+                            </div>
+                        </div>
+                    </section>
+                <!-- PIED DE PAGE -->
+                <footer class="col-xs-12">
+                    <p>&copy; 2017 - R&eacute;alisation Abdel-illah</p>
+                </footer>
+            </div> <!-- /.row -->
+        </main>
+
+
+
+
+
+        <!-- jQuery CDN -->
+        <script
+        src="https://code.jquery.com/jquery-3.2.1.min.js"
+        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous"></script>
+        <!-- Bootstrap JS -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" 
+        crossorigin="anonymous"></script>
+    
+    </body>
+
+</html>
