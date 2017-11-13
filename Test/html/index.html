@@ -23,7 +23,7 @@
                 <p>Espace clients :
                     <button onclick="document.getElementById('id01').style.display='block'">Connexion</button>
                     |
-                    <a href="#">Inscription</a>
+                    <button onclick="document.getElementById('id01').style.display='block'">Inscription</button>
                 </p>
                 <div id="id01" class="modal">
                     
@@ -50,6 +50,24 @@
                       </div>
                     </form>
                 </div>
+                <div id="id02" class="modal">
+                        <div class="container">
+                                <label><b>Pseudo</b></label>
+                                <input type="text" placeholder="Entrer pseudo" name="pseudo" required>
+                          
+                                <label><b>Mot de passe</b></label>
+                                <input type="password" placeholder="Entrer mot de passe" name="psw" required>
+                                  
+                                <button type="submit">Connexion</button>
+                                <input type="checkbox" checked="checked"> Se souvenir de moi
+                              </div>
+                          
+                              <div class="container" style="background-color:#f1f1f1">
+                                <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Fermer</button>
+                                <span class="psw">Mot de passe <a href="#">oublié ?</a></span>
+                              </div>
+                            </form>
+                        </div>
             </div> <!-- /.topheader -->
 
             <!--HEADER-->
