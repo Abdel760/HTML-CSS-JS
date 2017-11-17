@@ -1,36 +1,39 @@
-/* ------------------------------------------------------------
-            ~ LE CHAINAGE DE MÉTHODE AVEC JQUERY ~            
--------------------------------------------------------------*/
+/* ------------------------------------
+  LES SELECTEURS D'ENFANTS EN JQUERY
+--------------------------------------*/
+
+// -- Initialisation de jQuery
 $(function() {
 
-    // -- Les flemmards.js
+    // -- Les Flemards.js
     function l(e) {
         console.log(e);
-    }
+    } 
 
-    // -- Je souhaite sélectionner toutes mes DIV's
+    // -- Je souhaite selectionner toutes mes divs
     l($('div'))
 
-    // -- Je souhaite sélectionner mon menu
+    // -- Je souhaite selectionner mon menu
     l($('nav'))
 
-    // -- Je souhaite tous les élements descendant direct (enfants) qui sont dans le menu
+    // -- Je souhaite tous les éléments descendants direct (enfants) qui sont dans le menu.
     l($('nav').children())
 
-    // -- Je souhaite parmi ces enfants, uniquement les éléments ul
+    // -- Je souhaite parmi ces enfants, uniquement les éléments "ul"
     l($('nav').children('ul'))
 
-    // -- Je souhaite récuperer tous les élements "li" de mon "ul"
+    // -- Je souhaite récupérer tous les éléments "li" de mon "ul"
     l($('nav').children('ul').find('li'))
 
-    // -- Je souhaite récuperer uniquement le 2ème "li" de mon "ul"
-    l($('nav').children('ul').find('li'))
-    
-    // -- Je souhaite connaître le voisin immédiat de mon menu
+    // -- Je souhaite récupérer uniquement le 2ème élément de mes "li"
+    l($('nav').children('ul').find('li').eq(1))
+
+    // -- Je souhaite connaitre le voisin immediat de mon menu
     l($('nav').next())
-    l($('nav').next().next()) // Le voisin du voisin
-    l($('nav').prev()) // Le voisin d'avant
+    l($('nav').next().next()) //-- Le voisin du Voisin
+    l($('nav').prev()) // -- Le voisin d'avant
 
-    // -- Les Parents
+    // -- LES PARENTS
     l($('nav').parent())
+
 });

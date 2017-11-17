@@ -1,0 +1,114 @@
+body {
+    background: black;
+}
+
+/*------------------
+    NAV BAR APPLE
+--------------------*/
+
+.navbar-apple {
+    background-color: #1e1e1e;
+}
+
+.navbar-apple ul {
+    text-align: center;
+}
+
+.navbar-apple ul li {
+    margin-right: 15px;
+}
+
+.navbar-apple ul li a {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 400;
+}
+
+a.navbar-brand {
+    color: white !important;
+}
+
+.navbar .navbar-nav {
+    display: inline-block;
+    float: none;
+    vertical-align: top;
+}
+
+.navbar .navbar-collapse {
+
+}
+/*------------------
+    SECTION MOBILE
+--------------------*/
+
+#mobile {
+    background-color: #141414;
+}
+
+#mobile ul {
+    margin: 0;
+    text-align: center;
+
+}
+
+#mobile ul li {
+
+}
+
+#mobile ul li img {
+
+}
+
+/*-----------------------
+    SECTION PROJECTEUR
+------------------------*/
+
+#projecteur {
+    text-align: center;
+    padding-top: 20px;
+}
+
+#projecteur img {
+    max-width: 100%;
+    margin : 20px 0 0 0;
+}
+
+#projecteur h2 {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 400;
+    font-size: 50px;
+    color : white;
+}
+
+#projecteur h3 {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 100;
+    font-size: 60px;
+    color : white;
+    margin-top: 0;
+}
+
+#projecteur p {
+    color : #CCC;
+}
+
+/*-----------------------
+    SECTION iPHONE 7
+------------------------*/
+
+#iPhone7 {
+    background-image: linear-gradient(white 0%, #EEE 100%);
+    padding : 40px 0;
+    text-align: center;
+}
+
+#iPhone7 article h3 {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 100;
+    font-size: 36px;
+    color : #303235;
+    margin : 40px 0;
+}
+
+#iPhone7 article p {
+    margin : 40px 0;
+}

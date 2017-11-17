@@ -1,43 +1,44 @@
-/* ----------------------------------------------
-            ~ LES SÉLECTEURS JQUERY ~            
------------------------------------------------*/
+/* ----------------------
+  LES SELECTEURS jQUERY
+----------------------- */
 
 // -- Format : $('selecteur')
 // -- En jQuery, tous les sélecteurs CSS sont disponibles...
 
 $(function() {
     // -- DOM READY !
-    // -- LesFlemmards.js
+    // -- LesFlemards.js
     function l(e) {
         console.log(e);
     }
 
     // -- Sélectionner les balises SPAN :
 
-        // -- Version JavaScript
+        // Version Javascript :
         l(document.getElementsByTagName('span'));
-
-        // -- Version jQuery
+        
+        // Version jQuery
         l($('span'));
 
-    // -- Sélectionner mon menu :
+    // -- Sélectionner mon Menu
 
-        // -- Version JavaScript
-        l(document.getElementsById('menu'));
-        
-        // -- Version jQuery
-        l($('menu'));
+        // Version Javascript
+        l(document.getElementById('menu'));
 
-    // -- Sélectionner une Classe :
+        // Version jQuery
+        l($('#menu'));
 
-        // -- Version JavaScript
+    // -- Sélectionner une Classe
+
+        // Version Javascript
         l(document.getElementsByClassName('MaClasse'));
-        
-        // -- Version jQuery
-        l($('MaClasse'));
 
-    // -- Sélectionner un Attribut :
+        // Version jQuery
+        l($('.MaClasse'));
 
-        // -- Version jQuery
-        l($('href="https://www.google.fr'));
+    // -- Sélectionner un Attribut
+
+        // En jQuery
+        l($("[href='https://www.google.fr']"));
+
 });
